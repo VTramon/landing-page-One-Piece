@@ -1,7 +1,9 @@
+import styles from './style.module.scss';
+
 const SideBar = () => {
   return (
-    <div>
-      <ul>
+    <div className={styles.sideBar}>
+      <ul className={styles.list}>
         <li>Luffy</li>
         <li>Zoro</li>
         <li>Nami</li>
