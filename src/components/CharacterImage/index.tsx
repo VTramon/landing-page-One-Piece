@@ -16,21 +16,21 @@ type CharacterImageProps = {
 
 const CharacterImage: React.FC<CharacterImageProps> = ({ value }) => {
   const CharacterImageSelector = (value?: string) => {
-    if (value === 'Luffy') {
+    if (value === 'Monkey D. Luffy') {
       return Luffy;
-    } else if (value === 'Zoro') {
+    } else if (value === 'Roronoa Zoro') {
       return Zoro;
     } else if (value === 'Nami') {
       return Nami;
     } else if (value === 'Usopp') {
       return Usopp;
-    } else if (value === 'Sanji') {
+    } else if (value === 'Vinsmoke Sanji') {
       return Sanji;
     } else if (value === 'Chopper') {
       return Chopper;
     } else if (value === 'Franky') {
       return Franky;
-    } else if (value === 'Robin') {
+    } else if (value === 'Nico Robin') {
       return Robin;
     } else if (value === 'Brook') {
       return Brook;

@@ -10,31 +10,11 @@ type ContentProps = {
 const Content: React.FC<ContentProps> = ({ value }) => {
   return (
     <div className={styles.content}>
-      <div>
+      <div className={styles.characterInformation}>
         <h1>{value}</h1>
         <CharacterInformation character={value} />
       </div>
-      {!!value && value === 'Luffy' ? (
-        <CharacterImage value={value} />
-      ) : !!value && value === 'Usopp' ? (
-        <CharacterImage value={value} />
-      ) : !!value && value === 'Zoro' ? (
-        <CharacterImage value={value} />
-      ) : !!value && value === 'Nami' ? (
-        <CharacterImage value={value} />
-      ) : !!value && value === 'Brook' ? (
-        <CharacterImage value={value} />
-      ) : !!value && value === 'Chopper' ? (
-        <CharacterImage value={value} />
-      ) : !!value && value === 'Franky' ? (
-        <CharacterImage value={value} />
-      ) : !!value && value === 'Jinbe' ? (
-        <CharacterImage value={value} />
-      ) : !!value && value === 'Robin' ? (
-        <CharacterImage value={value} />
-      ) : !!value && value === 'Sanji' ? (
-        <CharacterImage value={value} />
-      ) : null}
+      {!!value ? <CharacterImage value={value} /> : null}
     </div>
   );
 };
