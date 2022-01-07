@@ -6,15 +6,35 @@
   height: 100vh;
   position: absolute;
   right: 0;
+
+  @media (max-width: 600px) {
+    font-size: 0.8em;
+    align-content: flex-end;
+  }
 }
 
 .characterInformation {
   h1 {
     font-size: 3em;
+    margin-bottom: 30px;
   }
 
   p {
     width: 40vw;
     text-align: start;
+  }
+
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    h1 {
+      font-size: 2em;
+    }
+
+    p {
+      text-align: center;
+    }
   }
 }

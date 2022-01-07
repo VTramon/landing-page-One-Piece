@@ -1,3 +1,5 @@
+import { PresentationPage } from '../PresentationPage';
+
 type CharacterInformationProps = {
   character?: string;
 };
@@ -36,7 +38,7 @@ const CharacterInformation: React.FC<CharacterInformationProps> = ({
     'É um homem-peixe da espécie tubarão-baleia. Seu primeiro encontro com luffy foi em uma tentativa para salvar Ace (irmão de luffy) do corredor da morte. Encontrou Luffy 2 anos depois quando recebeu sua ajuda para acabar com o golpe de estado que estava havendo na ilha dos homens peixes, que foi quando recebeu a oferta para entrar para o bando, e acabou aceitando a oferto algum tempo depois na ilha Whole Cake onde enfrentaram Big Mom uma dos 4 "Imperadores do Mar" (os piratas mais fortes atualmente). Seu grande sonho é, um dia, alcançar a coexistência pacífica e igualitária entre homens-peixe e humanos, como era o sonho de seu ex-capitão Fisher Tiger.';
 
   return (
-    <div>
+    <>
       {!!character && character === 'Monkey D. Luffy' ? (
         <p>{Luffy}</p>
       ) : !!character && character === 'Usopp' ? (
@@ -57,8 +59,10 @@ const CharacterInformation: React.FC<CharacterInformationProps> = ({
         <p>{Robin}</p>
       ) : !!character && character === 'Vinsmoke Sanji' ? (
         <p>{Sanji}</p>
-      ) : null}
-    </div>
+      ) : (
+        <PresentationPage />
+      )}
+    </>
   );
 };
 
