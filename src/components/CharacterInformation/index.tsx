@@ -40,7 +40,7 @@ const CharacterInformation: React.FC<CharacterInformationProps> = ({
   return (
     <>
       {!!character && character === 'Monkey D. Luffy' ? (
-        <p>{Luffy}</p>
+        <p data-testid="characterInformation">{Luffy}</p>
       ) : !!character && character === 'Usopp' ? (
         <p>{Usopp}</p>
       ) : !!character && character === 'Roronoa Zoro' ? (

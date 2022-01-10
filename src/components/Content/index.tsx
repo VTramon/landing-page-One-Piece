@@ -11,7 +11,7 @@ const Content: React.FC<ContentProps> = ({ value }) => {
   return (
     <div className={styles.content}>
       <div className={styles.characterInformation}>
-        <h1>{value}</h1>
+        <h1 data-testid="characterName">{value}</h1>
         <CharacterInformation character={value} />
       </div>
       {!!value ? <CharacterImage value={value} /> : null}

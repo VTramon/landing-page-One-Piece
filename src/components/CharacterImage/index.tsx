@@ -41,6 +41,7 @@ const CharacterImage: React.FC<CharacterImageProps> = ({ value }) => {
 
   return (
     <img
+      data-testid="characterImage"
       src={CharacterImageSelector(value)}
       alt={value}
       className={styles.image}

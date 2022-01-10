@@ -7,8 +7,13 @@ type SideBarProps = {
 const SideBar: React.FC<SideBarProps> = ({ CallbackFunction }) => {
   return (
     <div className={styles.sideBar}>
-      <ul className={styles.list}>
-        <li onClick={() => CallbackFunction('Monkey D. Luffy')}>Luffy</li>
+      <ul data-testid="list" className={styles.list}>
+        <li
+          data-testid="button"
+          onClick={() => CallbackFunction('Monkey D. Luffy')}
+        >
+          Luffy
+        </li>
         <li onClick={() => CallbackFunction('Roronoa Zoro')}>Zoro</li>
         <li onClick={() => CallbackFunction('Nami')}>Nami</li>
         <li onClick={() => CallbackFunction('Usopp')}>Usopp</li>
